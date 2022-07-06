@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let tv = ['Xóa', 'Vào', 'Ra'];
+    let ta = ['delete', 'in', 'out'];
+    let nhap = prompt('Nhập tiếng anh', '');
+    let k=-1
+    // k ko thể bằng 0 vì mảng đếm từ 0
+    for (let i = 0; i < ta.length; i++) {
+        if (nhap===ta[i]){
+            k=i
+        }
+    }
+    if (k===-1){
+        alert('Khong co')
+    }else {
+        alert('Tiếng việt là:' + tv[k])
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
